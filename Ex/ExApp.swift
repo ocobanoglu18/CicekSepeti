@@ -15,3 +15,8 @@ struct ExApp: App {
         }
     }
 }
+
+struct CustomColor {
+    static let cardColor = Color("mainColor")
+    static let blueColor = Color("mainBlue")
+}

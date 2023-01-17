@@ -7,15 +7,27 @@
 
 import SwiftUI
 
+
+
+
 struct ContentView: View {
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+var body: some View {
+        TabView{
+            MainPage()
+                .tabItem {
+                    Image(systemName: "house")
+                }
+            Categories()
+                .tabItem {
+                    Image(systemName: "list.dash")
+                }
+            Profile()
+                .tabItem {
+                    Image(systemName: "person")
+                }
         }
-        .padding()
+        .accentColor(Color.black)
+        
     }
 }
 
